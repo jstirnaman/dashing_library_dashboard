@@ -1,0 +1,123 @@
+/Users/jstirnaman/.rvm/rubies/ruby-2.1.0/bin/ruby extconf.rb 
+checking for load library path... 
+  DYLD_LIBRARY_PATH... 
+    checking /Users/jstirnaman/utilities/instantclient... no
+    checking /Users/jstirnaman/utilities/instantclient_11_2_basic... no
+    checking /opt/oracle/instantclient_11_2... yes
+  /opt/oracle/instantclient_11_2/libclntsh.dylib.11.1 looks like an instant client.
+checking for cc... ok
+checking for gcc... yes
+checking for LP64... yes
+checking for sys/types.h... yes
+checking for ruby header... ok
+checking for OCIInitialize() in oci.h... yes
+checking for Oracle 8.1.0 API - start
+checking for OCIEnvCreate()... yes
+checking for OCILobClose()... yes
+checking for OCILobCreateTemporary()... yes
+checking for OCILobFreeTemporary()... yes
+checking for OCILobGetChunkSize()... yes
+checking for OCILobIsTemporary()... yes
+checking for OCILobLocatorAssign()... yes
+checking for OCILobOpen()... yes
+checking for OCIMessageGet()... yes
+checking for OCIMessageOpen()... yes
+checking for OCINumberIsInt()... yes
+checking for OCINumberPrec()... yes
+checking for OCINumberSetPi()... yes
+checking for OCINumberShift()... yes
+checking for OCINumberSign()... yes
+checking for OCIReset()... yes
+checking for Oracle 8.1.0 API - pass
+checking for Oracle 9.0.0 API - start
+checking for OCIConnectionPoolCreate()... yes
+checking for OCIConnectionPoolDestroy()... yes
+checking for OCIDateTimeConstruct()... yes
+checking for OCIDateTimeGetDate()... yes
+checking for OCIDateTimeGetTime()... yes
+checking for OCIDateTimeGetTimeZoneOffset()... yes
+checking for OCIIntervalFromText()... yes
+checking for OCIIntervalGetDaySecond()... yes
+checking for OCIIntervalGetYearMonth()... yes
+checking for OCIIntervalSetDaySecond()... yes
+checking for OCIIntervalSetYearMonth()... yes
+checking for OCILogon2()... yes
+checking for OCIRowidToChar()... yes
+checking for OCIServerRelease()... yes
+checking for Oracle 9.0.0 API - pass
+checking for Oracle 9.2.0 API - start
+checking for OCINlsCharSetIdToName()... yes
+checking for OCINlsCharSetNameToId()... yes
+checking for OCIStmtPrepare2()... yes
+checking for OCIStmtRelease()... yes
+checking for Oracle 9.2.0 API - pass
+checking for Oracle 10.1.0 API - start
+checking for OCILobGetLength2()... yes
+checking for OCILobRead2()... yes
+checking for OCILobTrim2()... yes
+checking for OCILobWrite2()... yes
+checking for Oracle 10.1.0 API - pass
+checking for Oracle 10.2.0 API - start
+checking for OCIClientVersion()... yes
+checking for OCIDBShutdown()... yes
+checking for OCIDBStartup()... yes
+checking for OCIPing()... yes
+checking for Oracle 10.2.0 API - pass
+checking for Oracle 11.1.0 API - start
+checking for OCIArrayDescriptorAlloc()... yes
+checking for OCIArrayDescriptorFree()... yes
+checking for Oracle 11.1.0 API - pass
+checking for oratext in ociap.h... yes
+checking for OCIDateTime* in ociap.h... yes
+checking for OCIInterval* in ociap.h... yes
+checking for OCICallbackLobRead2 in ociap.h... yes
+checking for OCICallbackLobWrite2 in ociap.h... yes
+checking for OCIAdmin* in ociap.h... yes
+checking for OCIAuthInfo* in ociap.h... yes
+checking for OCIMsg* in ociap.h... yes
+checking for OCICPool* in ociap.h... yes
+checking for localtime_r()... yes
+checking for dladdr()... yes
+checking for intern.h... no
+checking for util.h... yes
+checking for ruby/util.h... yes
+checking for rb_encoding in ruby/ruby.h,ruby/encoding.h... yes
+checking for ruby/thread.h... yes
+checking for ruby_errinfo in ruby.h... no
+checking for rb_errinfo() in ruby.h... yes
+checking for rb_set_end_proc() in ruby.h... yes
+checking for rb_class_superclass() in ruby.h... yes
+checking for rb_thread_blocking_region() in ruby.h... yes
+checking for rb_thread_call_without_gvl() in ruby/thread.h... yes
+creating ../../lib/oci8.rb from ./../../lib/oci8.rb.in
+creating extconf.h
+creating Makefile
+
+make "DESTDIR=" clean
+
+make "DESTDIR="
+compiling oci8lib.c
+compiling env.c
+compiling error.c
+compiling oci8.c
+compiling ocihandle.c
+compiling connection_pool.c
+compiling stmt.c
+compiling bind.c
+compiling metadata.c
+compiling attr.c
+compiling lob.c
+compiling oradate.c
+compiling ocinumber.c
+compiling ocidatetime.c
+compiling object.c
+compiling apiwrap.c
+compiling encoding.c
+compiling oranumber_util.c
+compiling thread_util.c
+linking shared-object oci8lib_210.bundle
+ld: warning: directory not found for option '-L/Users/mpapis/.sm/pkg/active/lib'
+
+make "DESTDIR=" install
+/usr/bin/install -m 0755 oci8lib_210.bundle ./.gem.20140221-54431-1l3zzwg
+installing default oci8lib_210 libraries
