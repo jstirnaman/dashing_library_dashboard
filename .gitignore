@@ -2,4 +2,7 @@
 history.yml
 config.ru
 vendor/bundle
-
+/Gemfile.lock
+*.gem
+coverage/
+.ruby-version
