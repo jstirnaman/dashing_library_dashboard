@@ -14,7 +14,7 @@ Dashing.on 'ready', ->
 
   contentWidth = (Dashing.widget_base_dimensions[0] + Dashing.widget_margins[0] * 2) * Dashing.numColumns
   
-  Batman.config.viewPrefix = 'dashboard/views'
+#  Batman.config.viewPrefix = 'dashboard/views'
   Batman.setImmediate ->
     $('.gridster').width(contentWidth)
     $('.gridster ul:first').gridster
